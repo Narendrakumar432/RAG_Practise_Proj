@@ -257,27 +257,6 @@ Run the automated verification script which executes 3 distinct queries and prod
 python test_query.py
 ```
 
----
-
-## ☁️ Cloud Deployment Guide
-
-To deploy this service live on a free cloud tier:
-
-### Method: Render + Supabase (Recommended)
-
-1. **Database Setup (Supabase / Neon - Free pgvector)**:
-   - Create a free project at [supabase.com](https://supabase.com) or [neon.tech](https://neon.tech).
-   - In the SQL Editor, execute `vector_db/init.sql` to enable pgvector and create the table.
-   - Copy the PostgreSQL connection URI (`postgresql://postgres:[PASSWORD]@[HOST]:5432/postgres`).
-
-2. **Web Service Setup (Render - Free)**:
-   - Create a new **Web Service** on [render.com](https://render.com) connected to your private GitHub repository.
-   - **Environment**: Python 3
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `uvicorn server:app --host 0.0.0.0 --port $PORT`
-   - **Environment Variables**:
-     - `DATABASE_URL`: `your_supabase_or_neon_connection_string`
-
 3. **Ingest Documents into the Cloud Database**:
    - Run `python ingest.py --file sample_data/document.pdf` with `DATABASE_URL` set in your `.env`.
 
