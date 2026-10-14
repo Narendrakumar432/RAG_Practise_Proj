@@ -6,16 +6,6 @@ This implementation uses **direct SDK and library calls only** — completely fr
 
 ---
 
-## 🚀 Live Deployment
-
-- **Live Retrieval Endpoint**: `https://YOUR_DEPLOYMENT_URL/query` *(Replace with your deployed Render / Railway / Supabase endpoint)*
-- **Interactive API Documentation (Swagger)**: `https://YOUR_DEPLOYMENT_URL/docs`
-- **Health Check**: `https://YOUR_DEPLOYMENT_URL/health`
-
-*(See [Deployment Guide](#-cloud-deployment-guide) below for step-by-step instructions on deploying to Render & Supabase/Neon in under 5 minutes).*
-
----
-
 ## 🛠️ Technology Stack
 
 | Layer | Technology | Details / Justification |
