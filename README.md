@@ -293,19 +293,3 @@ To deploy this service live on a free cloud tier:
 
 ---
 
-## 📋 Final Submission Checklist
-
-- [x] **Private GitHub Repository**: Pattern `{yourName_Nestack_Submission}` (e.g. `Narendra_Nestack_Submission`).
-- [x] **Invited Evaluators**:
-  - `bishal@nestack.com`
-  - `sannidhya@nestack.com`
-  - `sanjay@nestack.com`
-- [x] **Repository Kept Strictly Private** (public repositories are disqualified).
-- [x] **Deliverables Verified**:
-  - `ingest.py`: Multi-page parsing, 1-indexed page retention, 500/100 overlapping chunking, `all-MiniLM-L6-v2` embedding, PostgreSQL `pgvector` insertion.
-  - `server.py`: FastAPI `/query` endpoint with cosine similarity retrieval (`1 - <=>`), schema validation, raw text chunks only.
-  - `results.json`: 3 queries executed against sample PDF with scores, chunk texts, and page numbers.
-  - `requirements.txt`: Clean, tested version pins.
-  - `assets/postman_test_result.png`: Verified Postman screenshot with 193ms latency and 200 OK status.
-  - `README.md`: Architecture, justifications, local & docker setup, Postman screenshot, curl examples, deployment guide.
-  - `Narendra_Nestack_Submission.zip`: Packaged clean source archive.
