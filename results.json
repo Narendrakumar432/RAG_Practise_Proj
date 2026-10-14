@@ -1,0 +1,65 @@
+[
+  {
+    "query": "What are the constraints regarding agent frameworks and libraries?",
+    "top_k": 3,
+    "results": [
+      {
+        "chunk_text": "Technical Assessment - Nestack \nDo not share or distribute this document. \nPage PAGE\nEVALUATION \nCriterion \nWeight \nWhat we look for \nPipeline runs end-to-end without errors \n35% \nIngestion completes; retrieval returns \nrelevant results. \nChunking and embedding design decisions \n25% \nChoices are justified with reasoning in the \nREADME. \nRetrieval quality - relevance of returned chunks \n25% \nresults.json entries are semantically \nrelevant to each query. \nCode clarity and README completeness \n15%",
+        "page_number": 2,
+        "score": 0.1818
+      },
+      {
+        "chunk_text": "e). \n\u2022 \nAny embedding model and any vector database are permitted. State and justify your choices in the README. \n\u2022 \nThe pipeline must run successfully on the sample PDF provided on the assessment platform. \nDELIVERABLES \n\u2022 \nIngestion script and retrieval server, fully runnable from your README instructions. \n\u2022 \nREADME: setup steps, justification for chunk size and overlap, justification for embedding model and vector DB, and \nsample output from the provided PDF. \n\u2022 \nresults.json: output of at",
+        "page_number": 1,
+        "score": 0.122
+      },
+      {
+        "chunk_text": "ts.json entries are semantically \nrelevant to each query. \nCode clarity and README completeness \n15% \nReadable code; setup instructions work on \na clean machine. \nInstructions\nKindly create a private GitHub repository named: {yourName_Nestack_Submission} (e.g., roy_Nestack_Submission) and add the \nfollowing contributors for evaluation:\n- bishal@nestack.com\n- sannidhya@nestack.com\n- sanjay@nestack.com\nYour submission must include:\n- A ZIP file of your complete codebase\n- A live deployment link\n-",
+        "page_number": 2,
+        "score": 0.1043
+      }
+    ]
+  },
+  {
+    "query": "How should text chunking and overlap be designed and justified?",
+    "top_k": 3,
+    "results": [
+      {
+        "chunk_text": "ts. \n2. Split the extracted text into overlapping chunks. Chunk size and overlap are your decision - justify both in the \nREADME. \n3. Generate a vector embedding for each chunk using any embedding model (e.g. OpenAI text-embedding-3-small, \nsentence-transformers, Cohere Embed). \n4. Store each embedding together with its chunk text and source page number in a vector database of your choice (e.g. \nChromaDB, FAISS, Pinecone, pgvector). \n \nThe script must be runnable as: \npython ingest.py --file",
+        "page_number": 1,
+        "score": 0.5041
+      },
+      {
+        "chunk_text": "plain-text query and \nreturns the most semantically similar chunks from the stored embeddings. There is no LLM call on the retrieval side \nand no conversational layer. Return raw chunk results only. \nPART 1 - INGESTION \nWrite a script that accepts a PDF file path and executes the following steps in order: \n1. Extract all text from the PDF, preserving page numbers. Handle multi-page documents. \n2. Split the extracted text into overlapping chunks. Chunk size and overlap are your decision -",
+        "page_number": 1,
+        "score": 0.392
+      },
+      {
+        "chunk_text": "Technical Assessment - Nestack \nDo not share or distribute this document. \nPage PAGE\nEVALUATION \nCriterion \nWeight \nWhat we look for \nPipeline runs end-to-end without errors \n35% \nIngestion completes; retrieval returns \nrelevant results. \nChunking and embedding design decisions \n25% \nChoices are justified with reasoning in the \nREADME. \nRetrieval quality - relevance of returned chunks \n25% \nresults.json entries are semantically \nrelevant to each query. \nCode clarity and README completeness \n15%",
+        "page_number": 2,
+        "score": 0.2808
+      }
+    ]
+  },
+  {
+    "query": "What are the required deliverables and evaluation criteria for the assessment?",
+    "top_k": 3,
+    "results": [
+      {
+        "chunk_text": "Technical Assessment - Nestack \nDo not share or distribute this document. \nPage PAGE\nEVALUATION \nCriterion \nWeight \nWhat we look for \nPipeline runs end-to-end without errors \n35% \nIngestion completes; retrieval returns \nrelevant results. \nChunking and embedding design decisions \n25% \nChoices are justified with reasoning in the \nREADME. \nRetrieval quality - relevance of returned chunks \n25% \nresults.json entries are semantically \nrelevant to each query. \nCode clarity and README completeness \n15%",
+        "page_number": 2,
+        "score": 0.4151
+      },
+      {
+        "chunk_text": "e). \n\u2022 \nAny embedding model and any vector database are permitted. State and justify your choices in the README. \n\u2022 \nThe pipeline must run successfully on the sample PDF provided on the assessment platform. \nDELIVERABLES \n\u2022 \nIngestion script and retrieval server, fully runnable from your README instructions. \n\u2022 \nREADME: setup steps, justification for chunk size and overlap, justification for embedding model and vector DB, and \nsample output from the provided PDF. \n\u2022 \nresults.json: output of at",
+        "page_number": 1,
+        "score": 0.369
+      },
+      {
+        "chunk_text": "edding model and vector DB, and \nsample output from the provided PDF. \n\u2022 \nresults.json: output of at least three different queries run against the provided PDF, in the response format above.",
+        "page_number": 1,
+        "score": 0.2299
+      }
+    ]
+  }
+]
